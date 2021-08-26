@@ -1,4 +1,4 @@
-from models import Credit_card, Address
+from models import CardType, Address
 
 
 class BillingInfo:
@@ -6,7 +6,7 @@ class BillingInfo:
         self.__phone_number: str = phone_number
         self.__address: Address = address
         self.__name: str = name
-        self.__credit_card: Credit_card = credit_card
+        self.__credit_card: CardType = credit_card
 
     @property
     def get_phone_number(self):

@@ -1,15 +1,16 @@
 import decimal
+import uuid
 
 from models.Category import Category
 
 
 class Product:
-    def __init__(self, category, name, price):
+    def __init__(self, category, name, price, description):
         self.__category: Category = category
         self.__name: str = name
         self.__price: decimal = price
-        self.__description: str
-        self.__id: str
+        self.__description: str = description
+        self.__id: str = str(uuid.uuid4())
 
     @property
     def get_category(self):
@@ -35,9 +36,6 @@ class Product:
     @property
     def get_id(self):
         return self.__id
-
-    def set_id(self, id):
-        self.__id = id
 
     @property
     def get_description(self):

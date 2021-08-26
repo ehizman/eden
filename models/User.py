@@ -2,14 +2,14 @@ import abc
 
 
 class User(abc.ABC):
-    def __init__(self, first_name, last_name, email, user_name, password):
+    def __init__(self, first_name, last_name, email, user_name, password, home_address, phone_number):
         self.__first_name: str = first_name
         self.__last_name: str = last_name
         self.__user_name: str = user_name
-        self.__phone_number: str
+        self.__phone_number: str = phone_number
         self.__email: str = email
         self.__password: str = password
-        self.__home_address: str
+        self.__home_address: str = home_address
 
     @property
     def get_first_name(self):
