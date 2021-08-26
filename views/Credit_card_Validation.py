@@ -57,6 +57,7 @@ if __name__ == "__main__":
         print("card is valid")
     else:
         print("card is invalid")
+        print("hello")
 
 #     public CardType getCardType(int[] number, int d) {
 #
